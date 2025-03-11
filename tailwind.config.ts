@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				wedding: {
+					ivory: "#FFFFF0",
+					gold: "#D4AF37",
+					blush: "#FFB6C1",
+					navy: "#000080",
+					champagne: "#F7E7CE",
+					sage: "#BCB88A",
+					charcoal: "#36454F",
+					rose: "#FF007F"
 				}
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				serif: ['Cormorant Garamond', 'serif'],
+				display: ['Playfair Display', 'serif'],
+				script: ['Great Vibes', 'cursive']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +101,68 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-in-down': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(-20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-5px)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.95)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.7s ease-out',
+				'fade-in-up': 'fade-in-up 0.7s ease-out',
+				'fade-in-down': 'fade-in-down 0.7s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'scale-in': 'scale-in 0.5s ease-out'
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/images/hero-bg.jpg')",
+				'floral-pattern': "url('/images/floral-pattern.png')",
 			}
 		}
 	},
